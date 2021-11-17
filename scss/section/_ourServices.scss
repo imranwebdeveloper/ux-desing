@@ -1,0 +1,43 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+#section {
+  margin-top: 5rem;
+  background: #eee;
+  .row {
+    padding: 1rem 0;
+  }
+}
+
+.border-right {
+  border-right: 1px solid $primary;
+  @include media-breakpoint-down(md) {
+    border-right: none;
+  }
+}
+
+.services {
+  position: relative;
+  padding: 1rem 0;
+
+  &__content {
+    padding: 1rem;
+    margin-top: 1.5rem;
+  }
+  &__pic {
+    max-width: 100%;
+    margin-top: 1.5rem;
+  }
+}
+.end {
+  text-align: end;
+  @include media-breakpoint-down(md) {
+    text-align: center;
+  }
+}
+.start {
+  text-align: start;
+  @include media-breakpoint-down(md) {
+    text-align: center;
+  }
+}

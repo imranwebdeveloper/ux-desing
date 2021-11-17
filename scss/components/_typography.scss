@@ -1,0 +1,50 @@
+@use "../custom" as *;
+
+.display-2 {
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  &--intro {
+    display: inline-block;
+    font-weight: 700;
+    color: $white;
+  }
+  &--description {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    display: block;
+    text-transform: none;
+    @include media-breakpoint-up(lg) {
+      font-size: 1.5rem;
+    }
+  }
+}
+.heading-line::before {
+  content: "";
+  width: 10rem;
+  height: 0.2rem;
+  display: block;
+  right: 0;
+  background: $primary;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+}
+.heading-line::after {
+  content: "";
+  width: 2rem;
+  height: 0.5rem;
+  display: block;
+  background: $primary;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.display-3 {
+  &--title {
+    font-size: 2rem;
+    font-weight: 600;
+    background-clip: text;
+    background-image: linear-gradient(to right, $primary, $secondary);
+    -webkit-text-fill-color: transparent;
+  }
+}

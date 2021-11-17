@@ -1,0 +1,41 @@
+@use "../components/mixins" as *;
+@use "../custom" as *;
+
+.testimonials {
+  @include gradient;
+  padding: 0;
+  position: relative;
+
+  &__card {
+    width: 70%;
+    background: rgba($white, 0.8);
+    padding: 2rem 2rem 3.5rem 2rem !important;
+    text-align: center;
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+    }
+    i {
+      color: $primary;
+    }
+  }
+  &__picture {
+    width: 6rem;
+    height: 6rem;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid rgba($primary, 0.7);
+
+    img {
+      display: block;
+    }
+  }
+  &__name {
+    padding-top: 4rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    color: $white;
+    font-weight: bold;
+  }
+}

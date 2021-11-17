@@ -1,0 +1,17 @@
+@use "custom";
+@use "frontawesome";
+// ===========================
+@use "./section/navbar";
+@use "./section/intro-section";
+@use "./section/company";
+@use "./section/ourServices";
+@use "./section/testimonials";
+@use "./section/portfolio";
+@use "./section/contact";
+@use "./section/footer";
+
+// ===========================
+@use "./components/typography";
+@use "./components/mixins";
+@use "./components/button";
+@use "./components/animation";
